@@ -9,7 +9,7 @@ Add this to your .pre-commit-config.yaml
 
 ```yaml
 -   repo: https://github.com/murilo-cunha/mirrors-pyre
-    rev: v0.9.9  # Use the sha / tag you want to point at
+    rev: v0.9.17  # Use the sha / tag you want to point at
     hooks:
     -   id: pyre-check
 ```
