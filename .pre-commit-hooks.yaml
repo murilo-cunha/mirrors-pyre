@@ -1,10 +1,11 @@
 -   id: pyre-check
     name: pyre-check
     description: 'Static type checking with `pyre-check`.'
-    entry: pyre
+    entry: pyre check
     language: python
     'types': [python]
     args: []
     require_serial: false
+    pass_filenames: false
     additional_dependencies: []
-    minimum_pre_commit_version: '0'
+    minimum_pre_commit_version: '2.9.2'
