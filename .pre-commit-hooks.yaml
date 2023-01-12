@@ -1,7 +1,7 @@
 -   id: pyre-check
     name: pyre-check
-    description: ''
-    entry: pyre-check
+    description: 'Static type checking with `pyre-check`.'
+    entry: pyre
     language: python
     'types': [python]
     args: []
