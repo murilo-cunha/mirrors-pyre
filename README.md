@@ -10,7 +10,7 @@ For `pre-commit`, see [github.com/pre-commit/pre-commit](https://github.com/pre-
 
 Add this to your project root
 
-```json
+```js
 {
   "site_package_search_strategy": "pep561",
   "source_directories": [
