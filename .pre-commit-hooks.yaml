@@ -3,7 +3,7 @@
     description: 'Static type checking with `pyre-check`.'
     entry: pyre check
     language: python
-    'types': [python]
+    'types_or': [python, pyi]
     args: []
     require_serial: false
     pass_filenames: false

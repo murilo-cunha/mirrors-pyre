@@ -10,12 +10,14 @@ jobs:
     name: main
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - uses: actions/setup-python@v1
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.8'
     - run: pip install pre-commit-mirror-maker
     - run: git config --global user.name 'Github Actions'
     - run: git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-    - run: pre-commit-mirror . --language python --package-name=pyre-check --types python
+    - run: python mirrors_pyre/update_version.py
     - run: |
         git remote set-url origin https://x-access-token:$GH_TOKEN@github.com/$GITHUB_REPOSITORY
         git push origin HEAD:refs/heads/main --tags
